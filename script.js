@@ -38,7 +38,9 @@ var x = setInterval(function() {
     }
     if(hours===0&&minutes===30&&seconds===0){
         header.style.color = 'red';
-        header.style.fontSize = '100px'
+        header.style.fontSize = '100px';
+        header.style.width = '490px';
+        header.style.height = '85px';
         audio.play();
     }
     if(hours===0&&minutes===0&&seconds===0){
