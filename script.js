@@ -1,7 +1,6 @@
 const header= document.getElementById('time');
 
 
-// Set the date we're counting down to
 var catchTime = new Date()
 var dayOfMonth = catchTime.getDate()
 var month = catchTime.getMonth()
@@ -12,8 +11,6 @@ var seconds = catchTime.getSeconds()
 var countDownDate = new Date(`${month+1} ${dayOfMonth}, ${year} ${hours+4}:${minutes+5}:${seconds}`).getTime();
 var sound = new Audio();
 sound.src = '/countdown_clock/sounds/shortAlert.mp3';
-// sound.load();
-// var play = sound.play();
 console.log(sound.src)
 var audio = document.createElement("Audio");
 
